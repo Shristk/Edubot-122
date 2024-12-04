@@ -1,0 +1,103 @@
+/* career_advisor/app/static/css/style.css */
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.chat-header {
+    background: #007bff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.chat-header img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.chat-body {
+    padding: 20px;
+    text-align: center;
+}
+
+.chat-body p {
+    margin: 0 0 20px;
+    font-size: 1.1em;
+    color: #666;
+}
+
+input {
+    width: calc(100% - 50px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    outline: none;
+    box-sizing: border-box;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+button i {
+    margin-right: 5px;
+}
+
+.chat-response {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #333;
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #f9f9fb;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
