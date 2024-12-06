@@ -1,34 +1,40 @@
-// career_advisor/app/static/js/app.js
+document.getElementById("send-btn").addEventListener("click", sendMessage);
 
-async function getCareerAdvice() {
-    const userInput = document.getElementById("userInput").value.trim();
-    const responseDiv = document.getElementById("response");
+function sendMessage() {
+    const userInput = document.getElementById("user-input").value;
+    const chatBox = document.getElementById("chat-box");
 
-    if (!userInput) {
-        responseDiv.innerHTML = "Please enter a skill.";
-        responseDiv.style.color = "red";
+    if (!userInput.trim()) {
         return;
     }
 
-    responseDiv.innerHTML = "Thinking...";
-    responseDiv.style.color = "#333";
+    const userMessage = document.createElement("div");
+    userMessage.className = "message user";
+    userMessage.textContent = userInput;
+    chatBox.appendChild(userMessage);
 
-    try {
-        const response = await fetch("/predict", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ skill: userInput }),
-        });
+    document.getElementById("user-input").value = "";
 
-        if (!response.ok) {
-            throw new Error("Failed to fetch career advice");
-        }
+    fetch("/predict", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: userInput }),
+    })
+    .then(response => response.json())
+    .then(data => {
+        const botMessage = document.createElement("div");
+        botMessage.className = "message bot";
+        botMessage.textContent = data.response;
+        chatBox.appendChild(botMessage);
 
-        const data = await response.json();
-        responseDiv.innerHTML = `Recommended Career: <strong>${data.career}</strong>`;
-        responseDiv.style.color = "#007bff";
-    } catch (error) {
-        responseDiv.innerHTML = "Something went wrong. Please try again.";
-        responseDiv.style.color = "red";
-    }
+        chatBox.scrollTop = chatBox.scrollHeight;
+    })
+    .catch(() => {
+        const botMessage = document.createElement("div");
+        botMessage.className = "message bot";
+        botMessage.textContent = "Oops! Something went wrong. Please try again.";
+        chatBox.appendChild(botMessage);
+
+        chatBox.scrollTop = chatBox.scrollHeight;
+    });
 }

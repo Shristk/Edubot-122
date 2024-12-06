@@ -1,0 +1,167 @@
+{
+    "intents": [
+        {
+            "tag": "greetings",
+            "patterns_responses": [
+                {
+                    "pattern": "hi",
+                    "response": "Hello! How can I assist you with your career today?"
+                },
+                {
+                    "pattern": "hello",
+                    "response": "Hi there! What career advice do you need?"
+                },
+                {
+                    "pattern": "good morning",
+                    "response": "Good morning! How can I help you kickstart your day with career advice?"
+                },
+                {
+                    "pattern": "good evening",
+                    "response": "Good evening! Let me know how I can assist you."
+                }
+            ]
+        },
+        {
+            "tag": "career_advice",
+            "patterns_responses": [
+                {
+                    "pattern": "What career options are available after graduation?",
+                    "response": "There are many career options depending on your interests and skills. For example, you can pursue higher studies, look for job opportunities in your field, or explore entrepreneurship."
+                },
+                {
+                    "pattern": "Can you guide me on career choices?",
+                    "response": "Your career path depends on your passion and aptitude. Consider fields like IT, healthcare, finance, or creative arts based on your strengths."
+                },
+                {
+                    "pattern": "What should I do after college?",
+                    "response": "Let me help you. Can you tell me your educational background and interests?"
+                },
+                {
+                    "pattern": "Which field is best for me?",
+                    "response": "Your best career field depends on your skills and interests. Let's discuss your strengths and preferences in detail."
+                },
+                {
+                    "pattern": "What are some good career paths?",
+                    "response": "Good career paths include roles in technology, healthcare, management, or creative industries, based on your expertise."
+                }
+            ]
+        },
+        {
+            "tag": "farewell",
+            "patterns_responses": [
+                {
+                    "pattern": "bye",
+                    "response": "Goodbye! Wishing you the best in your career journey!"
+                },
+                {
+                    "pattern": "goodbye",
+                    "response": "Take care! Feel free to reach out anytime for career advice."
+                },
+                {
+                    "pattern": "end",
+                    "response": "Alright, have a great day ahead! See you soon."
+                }
+            ]
+        },
+        {
+            "tag": "skills_development",
+            "patterns_responses": [
+                {
+                    "pattern": "What skills should I learn for a career in IT?",
+                    "response": "Technical skills like coding, data analysis, and cloud computing are highly valued in IT."
+                },
+                {
+                    "pattern": "Which technical skills are in demand?",
+                    "response": "Skills such as programming, data analytics, AI, and machine learning are in high demand across industries."
+                },
+                {
+                    "pattern": "Can you suggest some soft skills to improve?",
+                    "response": "Soft skills like communication, teamwork, adaptability, and emotional intelligence are crucial for career growth."
+                },
+                {
+                    "pattern": "How can I develop leadership skills?",
+                    "response": "To develop leadership skills, take on team projects, attend workshops, and read books on management and strategy."
+                },
+                {
+                    "pattern": "What are the top skills employers look for?",
+                    "response": "Employers value problem-solving, critical thinking, technical expertise, and interpersonal skills."
+                }
+            ]
+        },
+        {
+            "tag": "job_preparation",
+            "patterns_responses": [
+                {
+                    "pattern": "How do I prepare for job interviews?",
+                    "response": "Research the company, practice common questions, and be ready to showcase your skills and achievements."
+                },
+                {
+                    "pattern": "Can you help me with resume writing?",
+                    "response": "A strong resume should highlight your accomplishments, relevant skills, and experiences. Keep it concise and tailored to the job."
+                },
+                {
+                    "pattern": "What are some common interview questions?",
+                    "response": "Common questions include 'Tell me about yourself,' 'Why should we hire you,' and 'What are your strengths and weaknesses?'"
+                },
+                {
+                    "pattern": "How do I get ready for a technical interview?",
+                    "response": "Practice coding problems, algorithms, and system design. Platforms like LeetCode and HackerRank can help."
+                },
+                {
+                    "pattern": "What should I include in a cover letter?",
+                    "response": "Your cover letter should emphasize your skills, experiences, and how they align with the job role."
+                }
+            ]
+        },
+        {
+            "tag": "internship_advice",
+            "patterns_responses": [
+                {
+                    "pattern": "How do I find internships?",
+                    "response": "Platforms like LinkedIn, Internshala, and Handshake are great for finding internships."
+                },
+                {
+                    "pattern": "What are some good platforms for internships?",
+                    "response": "Popular platforms for internships include Internshala, Handshake, and Glassdoor."
+                },
+                {
+                    "pattern": "Can you help me with an internship application?",
+                    "response": "Tailor your applications to the role and highlight relevant projects or skills in your portfolio."
+                },
+                {
+                    "pattern": "What should I include in my internship portfolio?",
+                    "response": "Include your best projects, relevant coursework, and achievements to showcase your skills."
+                },
+                {
+                    "pattern": "How do internships help in building a career?",
+                    "response": "Internships provide valuable industry experience, networking opportunities, and a boost to your resume."
+                }
+            ]
+        },
+        {
+            "tag": "industry_insights",
+            "patterns_responses": [
+                {
+                    "pattern": "What are the latest trends in technology?",
+                    "response": "AI, cloud computing, and cybersecurity are among the fastest-growing fields in technology."
+                },
+                {
+                    "pattern": "Can you tell me about careers in AI?",
+                    "response": "AI offers opportunities in research, development, data science, and machine learning engineering."
+                },
+                {
+                    "pattern": "What are some growing industries?",
+                    "response": "Healthcare, green energy, and remote work solutions are booming industries with high demand for skilled professionals."
+                },
+                {
+                    "pattern": "Which industries are hiring the most?",
+                    "response": "Industries like IT, healthcare, finance, and e-commerce are actively hiring."
+                },
+                {
+                    "pattern": "What are some high-paying jobs?",
+                    "response": "High-paying careers include roles in data science, software development, management, and healthcare."
+                }
+            ]
+        }
+    ]
+}
