@@ -1,8 +1,9 @@
 # 🎓 EduBot
 
 **EduBot** is a simple yet powerful educational chatbot designed to provide users with career guidance and helpful academic information via a conversational interface.
-
-![EduBot Interface Demo](static/demo-screenshot.png)
+<p align="center">
+<img src="data/Screenshot 2024-12-20 000026.png" width="700px">
+</p>
 *Above: Example screenshot of the EduBot web interface*
 
 ---
@@ -62,13 +63,7 @@ To run EduBot locally:
 
 ---
 
-## 🖼️ Screenshots
 
-| Home Page                    | Chat in Action                  |
-|------------------------------|---------------------------------|
-| ![Home](static/home.png)     | ![Chat](static/chat.png)        |
-
----
 
 ## ⚙️ How It Works
 
@@ -78,10 +73,10 @@ EduBot is powered by Flask on the backend. When a user submits a message, the bo
 
 ## 🗺️ Project Roadmap
 
-- [ ] Enable multi-turn conversation flow
+- [x] Enable multi-turn conversation flow
 - [ ] Deploy to cloud (Heroku, Render, etc.) for public access
-- [ ] Expand dataset with rich, real-world guidance
-- [ ] Add external API integrations (e.g., job market trends, course recommendations)
+- [x] Expand dataset with rich, real-world guidance
+- [x] Add external API integrations (e.g., job market trends, course recommendations)
 
 ---
 
@@ -97,10 +92,3 @@ Contributions are welcome! To contribute:
 
 ---
 
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute.
-
----
-
-> Made with ❤️ to support learners on their educational journey.
